@@ -98,6 +98,34 @@ textarea {
    Author's custom styles
    ========================================================================== */
 
+
+/* Begin Hero Section */
+
+.navbar a{
+  color: #fff;
+  font-family: 'Source sans pro', sans-serif;
+  font-weight: 700;
+  font-size: 70px;
+  text-decoration: none;
+}
+
+.navbar{
+  text-align: right;
+  position: absolute;
+  bottom: 300px;
+  right: 20px;
+}
+
+.hero{
+  height: 80vh;
+  background-image: url('../img/hero_image.png');
+  background-repeat: no-repeat;
+  display: flex;
+  background-size: 100%;
+}
+
+/* End Hero Section */
+
 /* ==========================================================================
    Helper classes
    ========================================================================== */
@@ -263,4 +291,3 @@ textarea {
     page-break-after: avoid;
   }
 }
-
