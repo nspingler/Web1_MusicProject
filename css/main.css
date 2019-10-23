@@ -105,26 +105,102 @@ textarea {
   color: #fff;
   font-family: 'Source sans pro', sans-serif;
   font-weight: 700;
-  font-size: 70px;
+  font-size: 100px;
   text-decoration: none;
 }
 
 .navbar{
   text-align: right;
   position: absolute;
-  bottom: 300px;
+  bottom: 100px;
   right: 20px;
 }
 
+.navbar a:hover{
+  opacity: 0.5;
+}
+
+.logo {
+  padding-top: 5%;
+  position: absolute;
+  padding-right: 30px;
+  padding-top: -30px;
+}
+
 .hero{
-  height: 80vh;
+  height: 100vh;
   background-image: url('../img/hero_image.png');
   background-repeat: no-repeat;
   display: flex;
-  background-size: 100%;
+  background-size: cover;
+  margin: 0 auto;
+  position: relative;
 }
 
 /* End Hero Section */
+
+/* Begin Bio Section */
+
+.bio{
+  background-color: #101010;
+  padding: 5%;
+}
+
+.sectionbox_bio{
+  justify-content: space-between;
+  margin: 0 auto;
+  display: inline-block;
+  color: #fff;
+  font-family: 'Source sans pro', sans-serif;
+  font-weight: 400;
+  font-size: 30px;
+}
+
+#biohead{
+  font-size: 70px;
+  font-weight: 700;
+  text-align: center;
+}
+
+/* End Bio Section */
+
+/* Begin Tour Section */
+
+.tour{
+  background-color: #B60124;
+  padding: 10px;
+}
+
+/* End Tour Section */
+
+/* Begin Reviews Section */
+
+.reviews{
+  background-color: #101010;
+  padding: 10px;
+}
+
+/* End Reviews Section */
+
+/* Begin Footer Section */
+
+.footer{
+  background-color: #B60124;
+  padding: 10px;
+}
+
+.sectionbox_footer{
+  width: 80%;
+  justify-content: space-between;
+  display: table-row;
+  margin: 0 auto;
+  color: #fff;
+  font-family: 'Source sans pro', sans-serif;
+  font-weight: 400;
+  font-size: 30px;
+}
+
+/* End Footer Section */
 
 /* ==========================================================================
    Helper classes
