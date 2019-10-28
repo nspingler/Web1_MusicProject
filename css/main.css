@@ -125,14 +125,15 @@ textarea {
   position: absolute;
   padding-right: 30px;
   padding-top: -30px;
+  right: 0;
 }
 
 .hero{
   height: 100vh;
   background-image: url('../img/hero_image.png');
   background-repeat: no-repeat;
-  display: flex;
   background-size: cover;
+  display: flex;
   margin: 0 auto;
   position: relative;
 }
@@ -162,6 +163,12 @@ textarea {
   text-align: center;
 }
 
+.bioimage{
+  position: absolute;
+  right: 0;
+  clip-path: ellipse(76% 50% at 0% 50%);
+}
+
 /* End Bio Section */
 
 /* Begin Tour Section */
@@ -171,6 +178,64 @@ textarea {
   padding: 10px;
 }
 
+.sectionbox{
+  display: flex;
+  justify-content: space-between;
+  width: 80%;
+  margin: auto;
+}
+
+#tourhead{
+  font-size: 70px;
+  font-weight: 700;
+  text-align: center;
+  color: #fff;
+  font-family: 'Source sans pro', sans-serif;
+}
+
+.sectionbox_tour1-8{
+  justify-content: space-between;
+  padding-left: 10%;
+  margin: 0 auto;
+  display: inline-block;
+  color: #fff;
+  font-family: 'Source sans pro', sans-serif;
+  font-weight: 400;
+  font-size: 30px;
+  position: relative;
+}
+
+.sectionbox_tour9-12{
+  justify-content: space-between;
+  padding-right: 10%;
+  margin: 0 auto;
+  display: inline-block;
+  color: #fff;
+  font-family: 'Source sans pro', sans-serif;
+  font-weight: 400;
+  font-size: 30px;
+  right: 20px;
+  position: relative;
+}
+
+.sectionbox_tour9-10{
+  right: 0px;
+  width: 300px;
+  padding: 10%;
+}
+
+.tourimage{
+  position: absolute;
+  left: 0;
+  clip-path: ellipse(76% 50% at 100% 50%);
+}
+
+.sectionbox_tour11-12{
+  right: 0px;
+  width: 300px;
+  padding: 10%;
+}
+
 /* End Tour Section */
 
 /* Begin Reviews Section */
@@ -178,6 +243,32 @@ textarea {
 .reviews{
   background-color: #101010;
   padding: 10px;
+}
+
+#reviewhead{
+  font-size: 70px;
+  font-weight: 700;
+  text-align: center;
+  color: #fff;
+  font-family: 'Source sans pro', sans-serif;
+}
+
+.sectionbox{
+  display: flex;
+  justify-content: space-between;
+  width: 80%;
+  margin: auto;
+  display: inline-block;
+  color: #fff;
+  font-family: 'Source sans pro', sans-serif;
+  font-weight: 400;
+  font-size: 30px;
+}
+
+.reviewimage{
+  position: absolute;
+  right: 0;
+  clip-path: ellipse(76% 50% at 0% 50%);
 }
 
 /* End Reviews Section */
