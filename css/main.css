@@ -98,6 +98,9 @@ textarea {
    Author's custom styles
    ========================================================================== */
 
+body{
+  overflow-x: hidden;
+}
 
 /* Begin Hero Section */
 
@@ -144,7 +147,7 @@ textarea {
 
 .bio{
   background-color: #101010;
-  padding: 5%;
+  display: flex;
 }
 
 .sectionbox_bio{
@@ -157,6 +160,7 @@ textarea {
   font-size: 30px;
 }
 
+
 #biohead{
   font-size: 70px;
   font-weight: 700;
@@ -164,9 +168,12 @@ textarea {
 }
 
 .bioimage{
-  position: absolute;
-  right: 0;
+  margin-left: 0px;
   clip-path: ellipse(76% 50% at 0% 50%);
+  float: left;
+  margin-right: 10px;
+  width: 800px;
+  height: 800px;
 }
 
 /* End Bio Section */
@@ -176,6 +183,10 @@ textarea {
 .tour{
   background-color: #B60124;
   padding: 10px;
+  padding-bottom: 80px;
+  width: 100%;
+  position: relative;
+  height: 2500px;
 }
 
 .sectionbox{
@@ -193,6 +204,28 @@ textarea {
   font-family: 'Source sans pro', sans-serif;
 }
 
+#tour2,
+#tour3,
+#tour4,
+#tour5,
+#tour6,
+#tour7,
+#tour8{
+  border-bottom: 10px solid #CC4F6D;
+}
+
+#tour1,
+#tour9{
+  border-bottom: 10px solid #CC4F6D;
+  border-top: 10px solid #CC4F6D;
+}
+
+#tour10,
+#tour11,
+#tour12{
+  border-bottom: 10px solid #CC4F6D;
+}
+
 .sectionbox_tour1-8{
   justify-content: space-between;
   padding-left: 10%;
@@ -208,14 +241,14 @@ textarea {
 .sectionbox_tour9-12{
   justify-content: space-between;
   padding-right: 10%;
-  margin: 0 auto;
   display: inline-block;
+  margin: 0 auto;
   color: #fff;
   font-family: 'Source sans pro', sans-serif;
   font-weight: 400;
   font-size: 30px;
   right: 20px;
-  position: relative;
+  position: absolute;
 }
 
 .sectionbox_tour9-10{
@@ -225,9 +258,13 @@ textarea {
 }
 
 .tourimage{
-  position: absolute;
-  left: 0;
   clip-path: ellipse(76% 50% at 100% 50%);
+  float: right;
+  position: absolute;
+  right: 0px;
+  top: 500px;
+  height: 1000px;
+  width: 275%;
 }
 
 .sectionbox_tour11-12{
