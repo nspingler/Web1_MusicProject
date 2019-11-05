@@ -17,7 +17,7 @@
     font-size: 1em;
     line-height: 1.4;
   }
-  
+
   /*
    * Remove text-shadow in selection highlight:
    * https://twitter.com/miketaylr/status/12228805301
@@ -27,21 +27,21 @@
    *
    * Customize the background color to match your design.
    */
-  
+
   ::-moz-selection {
     background: #b3d4fc;
     text-shadow: none;
   }
-  
+
   ::selection {
     background: #b3d4fc;
     text-shadow: none;
   }
-  
+
   /*
    * A better looking default horizontal rule
    */
-  
+
   hr {
     display: block;
     height: 1px;
@@ -50,13 +50,13 @@
     margin: 1em 0;
     padding: 0;
   }
-  
+
   /*
    * Remove the gap between audio, canvas, iframes,
    * images, videos and the bottom of their containers:
    * https://github.com/h5bp/html5-boilerplate/issues/440
    */
-  
+
   audio,
   canvas,
   iframe,
@@ -65,46 +65,46 @@
   video {
     vertical-align: middle;
   }
-  
+
   /*
    * Remove default fieldset styles.
    */
-  
+
   fieldset {
     border: 0;
     margin: 0;
     padding: 0;
   }
-  
+
   /*
    * Allow only vertical resizing of textareas.
    */
-  
+
   textarea {
     resize: vertical;
   }
-  
+
   /* ==========================================================================
      Browser Upgrade Prompt
      ========================================================================== */
-  
+
   .browserupgrade {
     margin: 0.2em 0;
     background: #ccc;
     color: #000;
     padding: 0.2em 0;
   }
-  
+
   /* ==========================================================================
      Author's custom styles
      ========================================================================== */
-  
+
   body {
     overflow-x: hidden;
   }
-  
+
   /* Begin Hero Section */
-  
+
   .navbar a {
     color: #fff;
     font-family: 'Source sans pro', sans-serif;
@@ -112,18 +112,18 @@
     font-size: 100px;
     text-decoration: none;
   }
-  
+
   .navbar {
     text-align: right;
     position: absolute;
     bottom: 100px;
     right: 20px;
   }
-  
+
   .navbar a:hover {
     opacity: 0.5;
   }
-  
+
   .logo {
     padding-top: 5%;
     position: absolute;
@@ -131,7 +131,7 @@
     padding-top: -30px;
     right: 0;
   }
-  
+
   .hero {
     height: 100vh;
     background-image: url('../img/hero_image.png');
@@ -141,16 +141,16 @@
     margin: 0 auto;
     position: relative;
   }
-  
+
   /* End Hero Section */
-  
+
   /* Begin Bio Section */
-  
+
   .bio {
     background-color: #101010;
     display: flex;
   }
-  
+
   .sectionbox_bio {
     justify-content: space-between;
     margin: 0 auto;
@@ -160,26 +160,29 @@
     font-weight: 400;
     font-size: 30px;
   }
-  
+
   #biohead {
     font-size: 70px;
     font-weight: 700;
     text-align: center;
   }
-  
+
   .bioimage {
-    margin-left: 0px;
     clip-path: ellipse(76% 50% at 0% 50%);
+    shape-outside: ellipse(76% 50% at 0% 50%);
     float: left;
-    margin-right: 10px;
-    width: 800px;
-    height: 800px;
   }
-  
+
+  .bioimage img{
+    width: 1000px;
+    height: auto;
+    float: left;
+  }
+
   /* End Bio Section */
-  
+
   /* Begin Tour Section */
-  
+
   .tour {
     background-color: #B60124;
     padding: 10px;
@@ -188,14 +191,14 @@
     position: relative;
     height: 2500px;
   }
-  
+
   .sectionbox {
     display: flex;
     justify-content: space-between;
     width: 80%;
     margin: auto;
   }
-  
+
   #tourhead {
     font-size: 70px;
     font-weight: 700;
@@ -203,29 +206,32 @@
     color: #fff;
     font-family: 'Source sans pro', sans-serif;
   }
-  
+
+  #tour1,
   #tour2,
   #tour3,
   #tour4,
   #tour5,
   #tour6,
   #tour7,
-  #tour8 {
+  #tour8,
+  #tour9,
+  #tour10,
+  #tour11,
+  #tour12 {
     border-bottom: 10px solid #CC4F6D;
+    flex-direction: column;
+    justify-content: center;
+    text-align: center;
+    margin: 10px;
   }
-  
+
   #tour1,
   #tour9 {
     border-bottom: 10px solid #CC4F6D;
     border-top: 10px solid #CC4F6D;
   }
-  
-  #tour10,
-  #tour11,
-  #tour12 {
-    border-bottom: 10px solid #CC4F6D;
-  }
-  
+
   .sectionbox_tour1-8 {
     justify-content: space-between;
     padding-left: 10%;
@@ -237,7 +243,7 @@
     font-size: 30px;
     position: relative;
   }
-  
+
   .sectionbox_tour9-12 {
     justify-content: space-between;
     padding-right: 10%;
@@ -250,38 +256,35 @@
     right: 20px;
     position: absolute;
   }
-  
+
   .sectionbox_tour9-10 {
     right: 0px;
     width: 300px;
     padding: 10%;
   }
-  
-  .tourimage {
-    clip-path: ellipse(76% 50% at 100% 50%);
+
+
+  .bioimage img{
+    width: 1000px;
+    height: auto;
     float: right;
-    position: absolute;
-    right: 0px;
-    top: 500px;
-    height: 1000px;
-    width: 275%;
   }
-  
+
   .sectionbox_tour11-12 {
     right: 0px;
     width: 300px;
     padding: 10%;
   }
-  
+
   /* End Tour Section */
-  
+
   /* Begin Reviews Section */
-  
+
   .reviews {
     background-color: #101010;
     padding: 10px;
   }
-  
+
   #reviewhead {
     font-size: 70px;
     font-weight: 700;
@@ -289,7 +292,7 @@
     color: #fff;
     font-family: 'Source sans pro', sans-serif;
   }
-  
+
   .sectionbox {
     display: flex;
     justify-content: space-between;
@@ -301,22 +304,24 @@
     font-weight: 400;
     font-size: 30px;
   }
-  
+
   .reviewimage {
     position: absolute;
     right: 0;
     clip-path: ellipse(76% 50% at 0% 50%);
+    shape-outside: ellipse(76% 50% at 0% 50%);
+    float: right;
   }
-  
+
   /* End Reviews Section */
-  
+
   /* Begin Footer Section */
-  
+
   .footer {
     background-color: #B60124;
     padding: 10px;
   }
-  
+
   .sectionbox_footer {
     width: 80%;
     justify-content: space-between;
@@ -327,21 +332,21 @@
     font-weight: 400;
     font-size: 30px;
   }
-  
+
   /* End Footer Section */
-  
+
   /* ==========================================================================
      Helper classes
      ========================================================================== */
-  
+
   /*
    * Hide visually and from screen readers
    */
-  
+
   .hidden {
     display: none !important;
   }
-  
+
   /*
   * Hide only visually, but have it available for screen readers:
   * https://snook.ca/archives/html_and_css/hiding-content-for-accessibility
@@ -350,7 +355,7 @@
   *    causes content to wrap 1 word per line:
   *    https://medium.com/@jessebeach/beware-smushed-off-screen-accessible-text-5952a4c2cbfe
   */
-  
+
   .sr-only {
     border: 0;
     clip: rect(0, 0, 0, 0);
@@ -363,13 +368,13 @@
     width: 1px;
     /* 1 */
   }
-  
+
   /*
   * Extends the .sr-only class to allow the element
   * to be focusable when navigated to via the keyboard:
   * https://www.drupal.org/node/897638
   */
-  
+
   .sr-only.focusable:active,
   .sr-only.focusable:focus {
     clip: auto;
@@ -380,15 +385,15 @@
     white-space: inherit;
     width: auto;
   }
-  
+
   /*
   * Hide visually and from screen readers, but maintain layout
   */
-  
+
   .invisible {
     visibility: hidden;
   }
-  
+
   /*
   * Clearfix: contain floats
   *
@@ -400,7 +405,7 @@
   * 2. The use of `table` rather than `block` is only necessary if using
   *    `:before` to contain the top-margins of child elements.
   */
-  
+
   .clearfix:before,
   .clearfix:after {
     content: " ";
@@ -408,34 +413,34 @@
     display: table;
     /* 2 */
   }
-  
+
   .clearfix:after {
     clear: both;
   }
-  
+
   /* ==========================================================================
      EXAMPLE Media Queries for Responsive Design.
      These examples override the primary ('mobile first') styles.
      Modify as content requires.
      ========================================================================== */
-  
+
   @media only screen and (min-width: 35em) {
     /* Style adjustments for viewports that meet the condition */
   }
-  
+
   @media print,
   (-webkit-min-device-pixel-ratio: 1.25),
   (min-resolution: 1.25dppx),
   (min-resolution: 120dpi) {
     /* Style adjustments for high resolution devices */
   }
-  
+
   /* ==========================================================================
      Print styles.
      Inlined to avoid the additional HTTP request:
      https://www.phpied.com/delay-loading-your-print-css/
      ========================================================================== */
-  
+
   @media print {
     *,
     *:before,
