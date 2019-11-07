@@ -148,17 +148,20 @@
 
   .bio {
     background-color: #101010;
-    display: flex;
+    height: auto;
+    width: 100%;
   }
 
-  .sectionbox_bio {
+  .para {
     justify-content: space-between;
-    margin: 0 auto;
-    display: inline-block;
     color: #fff;
     font-family: 'Source sans pro', sans-serif;
     font-weight: 400;
     font-size: 30px;
+    margin: 20px;
+    display: flex;
+    flex-direction: column;
+    float: right;
   }
 
   #biohead {
@@ -185,18 +188,8 @@
 
   .tour {
     background-color: #B60124;
-    padding: 10px;
-    padding-bottom: 80px;
     width: 100%;
-    position: relative;
-    height: 2500px;
-  }
-
-  .sectionbox {
-    display: flex;
-    justify-content: space-between;
-    width: 80%;
-    margin: auto;
+    height: auto;
   }
 
   #tourhead {
@@ -207,15 +200,12 @@
     font-family: 'Source sans pro', sans-serif;
   }
 
-  #tour1,
   #tour2,
   #tour3,
   #tour4,
-  #tour5,
   #tour6,
   #tour7,
   #tour8,
-  #tour9,
   #tour10,
   #tour11,
   #tour12 {
@@ -224,57 +214,67 @@
     justify-content: center;
     text-align: center;
     margin: 10px;
+    display: flex;
   }
 
   #tour1,
+  #tour5,
   #tour9 {
     border-bottom: 10px solid #CC4F6D;
     border-top: 10px solid #CC4F6D;
-  }
+    text-align: center;
+}
 
-  .sectionbox_tour1-8 {
+  .sectionbox_tour {
+    display: flex;
     justify-content: space-between;
-    padding-left: 10%;
-    margin: 0 auto;
-    display: inline-block;
+    align-items: baseline;
+    width: 80%;
+    margin: auto;
     color: #fff;
     font-family: 'Source sans pro', sans-serif;
     font-weight: 400;
     font-size: 30px;
-    position: relative;
   }
 
-  .sectionbox_tour9-12 {
+  .tourimage{
+    width: 100%;
+    height: 1000px;
+    background-image: url('../img/tourimage.png');
+    background-position: center center;
+    background-size: cover;
+    background-repeat: no-repeat;
+  }
+
+  .tour1-4 {
+    display: table-cell;
     justify-content: space-between;
     padding-right: 10%;
-    display: inline-block;
-    margin: 0 auto;
-    color: #fff;
-    font-family: 'Source sans pro', sans-serif;
-    font-weight: 400;
-    font-size: 30px;
-    right: 20px;
-    position: absolute;
+    width: 30%;
+    float: left;
   }
 
-  .sectionbox_tour9-10 {
-    right: 0px;
-    width: 300px;
-    padding: 10%;
+  .tour5-8 {
+    display: table-cell;
+    justify-content: space-between;
+    padding-right: 10%;
+    width: 30%;
+    float: left;
   }
 
-
-  .bioimage img{
-    width: 1000px;
-    height: auto;
+  .tour9-12 {
+    display: table-cell;
+    justify-content: space-between;
+    padding-right: 10%;
+    width: 30%;
     float: right;
   }
 
-  .sectionbox_tour11-12 {
-    right: 0px;
-    width: 300px;
-    padding: 10%;
-  }
+    .bioimage img{
+      width: 1000px;
+      height: auto;
+      float: right;
+    }
 
   /* End Tour Section */
 
@@ -306,11 +306,16 @@
   }
 
   .reviewimage {
-    position: absolute;
-    right: 0;
-    clip-path: ellipse(76% 50% at 0% 50%);
-    shape-outside: ellipse(76% 50% at 0% 50%);
+    clip-path: ellipse(98% 50% at 98% 50%);
+    shape-outside: ellipse(98% 50% at 98% 50%);
     float: right;
+  }
+
+  .reviewimage img{
+    width: 1000px;
+    height: auto;
+    float: right;
+    right: 0;
   }
 
   /* End Reviews Section */
@@ -423,10 +428,35 @@
      These examples override the primary ('mobile first') styles.
      Modify as content requires.
      ========================================================================== */
+     /* On screens that are 1000px wide or less */
+     @media screen and (max-width: 1000px) {
 
-  @media only screen and (min-width: 35em) {
-    /* Style adjustments for viewports that meet the condition */
-  }
+     }
+
+     /* On screens that are 900px wide or less */
+     @media screen and (max-width: 900px) {
+
+     }
+
+     /* On screens that are 768px wide or less */
+     @media screen and (max-width: 768px) {
+
+     }
+
+     /* On screens that are 550px wide or less */
+     @media screen and (max-width: 550px) {
+
+     }
+
+     /* On screens that are 450px wide or less */
+     @media screen and (max-width: 450px) {
+
+     }
+
+     /* On screens that are 300px wide or less */
+     @media screen and (max-width: 300px) {
+
+     }
 
   @media print,
   (-webkit-min-device-pixel-ratio: 1.25),
