@@ -17,7 +17,7 @@
     font-size: 1em;
     line-height: 1.4;
   }
-  
+
   /*
    * Remove text-shadow in selection highlight:
    * https://twitter.com/miketaylr/status/12228805301
@@ -27,21 +27,21 @@
    *
    * Customize the background color to match your design.
    */
-  
+
   ::-moz-selection {
     background: #b3d4fc;
     text-shadow: none;
   }
-  
+
   ::selection {
     background: #b3d4fc;
     text-shadow: none;
   }
-  
+
   /*
    * A better looking default horizontal rule
    */
-  
+
   hr {
     display: block;
     height: 1px;
@@ -50,13 +50,13 @@
     margin: 1em 0;
     padding: 0;
   }
-  
+
   /*
    * Remove the gap between audio, canvas, iframes,
    * images, videos and the bottom of their containers:
    * https://github.com/h5bp/html5-boilerplate/issues/440
    */
-  
+
   audio,
   canvas,
   iframe,
@@ -65,46 +65,46 @@
   video {
     vertical-align: middle;
   }
-  
+
   /*
    * Remove default fieldset styles.
    */
-  
+
   fieldset {
     border: 0;
     margin: 0;
     padding: 0;
   }
-  
+
   /*
    * Allow only vertical resizing of textareas.
    */
-  
+
   textarea {
     resize: vertical;
   }
-  
+
   /* ==========================================================================
      Browser Upgrade Prompt
      ========================================================================== */
-  
+
   .browserupgrade {
     margin: 0.2em 0;
     background: #ccc;
     color: #000;
     padding: 0.2em 0;
   }
-  
+
   /* ==========================================================================
      Author's custom styles
      ========================================================================== */
-  
+
   body {
     overflow-x: hidden;
   }
-  
+
   /* Begin Hero Section */
-  
+
   .navbar a {
     color: #fff;
     font-family: 'Source sans pro', sans-serif;
@@ -112,18 +112,18 @@
     font-size: 100px;
     text-decoration: none;
   }
-  
+
   .navbar {
     text-align: right;
     position: absolute;
     bottom: 100px;
     right: 20px;
   }
-  
+
   .navbar a:hover {
     opacity: 0.5;
   }
-  
+
   .logo {
     padding-top: 5%;
     position: absolute;
@@ -131,7 +131,7 @@
     padding-top: -30px;
     right: 0;
   }
-  
+
   .hero {
     height: 100vh;
     background-image: url('../img/hero_image.png');
@@ -141,61 +141,54 @@
     margin: 0 auto;
     position: relative;
   }
-  
+
   /* End Hero Section */
-  
+
   /* Begin Bio Section */
-  
+
   .bio {
     background-color: #101010;
-    display: flex;
+    height: auto;
+    width: 100%;
   }
-  
-  .sectionbox_bio {
+
+  .para {
     justify-content: space-between;
-    margin: 0 auto;
-    display: inline-block;
     color: #fff;
     font-family: 'Source sans pro', sans-serif;
     font-weight: 400;
     font-size: 30px;
+    margin: 20px;
+    display: flex;
+    flex-direction: column;
+    float: right;
+    width: 100%;
   }
-  
+
   #biohead {
     font-size: 70px;
     font-weight: 700;
     text-align: center;
   }
-  
+
   .bioimage {
-    margin-left: 0px;
     clip-path: ellipse(76% 50% at 0% 50%);
+    shape-outside: ellipse(76% 50% at 0% 50%);
     float: left;
-    margin-right: 10px;
-    width: 800px;
-    height: 800px;
+    margin: 5% 5% 5% 0;
   }
-  
+
+
   /* End Bio Section */
-  
+
   /* Begin Tour Section */
-  
+
   .tour {
     background-color: #B60124;
-    padding: 10px;
-    padding-bottom: 80px;
     width: 100%;
-    position: relative;
-    height: 2500px;
+    height: auto;
   }
-  
-  .sectionbox {
-    display: flex;
-    justify-content: space-between;
-    width: 80%;
-    margin: auto;
-  }
-  
+
   #tourhead {
     font-size: 70px;
     font-weight: 700;
@@ -203,85 +196,105 @@
     color: #fff;
     font-family: 'Source sans pro', sans-serif;
   }
-  
+
+/* fixed the margin that was creating wierd spacing */
+
+  #tourhead h1{
+    margin: 0 auto;
+  }
+
   #tour2,
   #tour3,
   #tour4,
-  #tour5,
   #tour6,
   #tour7,
-  #tour8 {
-    border-bottom: 10px solid #CC4F6D;
-  }
-  
-  #tour1,
-  #tour9 {
-    border-bottom: 10px solid #CC4F6D;
-    border-top: 10px solid #CC4F6D;
-  }
-  
+  #tour8,
   #tour10,
   #tour11,
   #tour12 {
     border-bottom: 10px solid #CC4F6D;
+    flex-direction: column;
+    justify-content: center;
+    text-align: center;
+    margin: 10px;
+    display: flex;
   }
-  
-  .sectionbox_tour1-8 {
+
+  #tour1,
+  #tour5,
+  #tour9 {
+    border-bottom: 10px solid #CC4F6D;
+    border-top: 10px solid #CC4F6D;
+    text-align: center;
+}
+
+  .sectionbox_tour {
+    display: flex;
     justify-content: space-between;
-    padding-left: 10%;
-    margin: 0 auto;
-    display: inline-block;
+    align-items: baseline;
+    width: 80%;
+    margin: auto;
     color: #fff;
     font-family: 'Source sans pro', sans-serif;
     font-weight: 400;
     font-size: 30px;
-    position: relative;
   }
-  
-  .sectionbox_tour9-12 {
+
+  .tourimage{
+    width: 100%;
+    height: 1000px;
+    background-image: url('../img/tourimage.png');
+    background-position: center center;
+    background-size: cover;
+    background-repeat: no-repeat;
+  }
+
+  .tour1-4 {
+    display: table-cell;
     justify-content: space-between;
     padding-right: 10%;
-    display: inline-block;
-    margin: 0 auto;
-    color: #fff;
-    font-family: 'Source sans pro', sans-serif;
-    font-weight: 400;
-    font-size: 30px;
-    right: 20px;
-    position: absolute;
+    width: 30%;
+    float: left;
   }
-  
-  .sectionbox_tour9-10 {
-    right: 0px;
-    width: 300px;
-    padding: 10%;
+
+  .tour5-8 {
+    display: table-cell;
+    justify-content: space-between;
+    padding-right: 10%;
+    width: 30%;
+    float: left;
   }
-  
-  .tourimage {
-    clip-path: ellipse(76% 50% at 100% 50%);
+
+  .tour9-12 {
+    display: table-cell;
+    justify-content: space-between;
+    padding-right: 10%;
+    width: 30%;
     float: right;
-    position: absolute;
-    right: 0px;
-    top: 500px;
-    height: 1000px;
-    width: 275%;
   }
-  
-  .sectionbox_tour11-12 {
-    right: 0px;
-    width: 300px;
-    padding: 10%;
-  }
-  
+
+
+
+
+/* Made some updates to the image to stick the left */
+
+    .bioimage img{
+      width: 600px;
+  height: auto;
+  float: right;
+  position: relative;
+  left: -50px;
+    }
+
   /* End Tour Section */
-  
+
   /* Begin Reviews Section */
-  
+
   .reviews {
     background-color: #101010;
     padding: 10px;
   }
-  
+
   #reviewhead {
     font-size: 70px;
     font-weight: 700;
@@ -289,34 +302,41 @@
     color: #fff;
     font-family: 'Source sans pro', sans-serif;
   }
-  
+
   .sectionbox {
     display: flex;
     justify-content: space-between;
-    width: 80%;
-    margin: auto;
-    display: inline-block;
+    flex-direction: column;
+    width: 90%;
+    margin: 0 2% 0 2%;
     color: #fff;
     font-family: 'Source sans pro', sans-serif;
     font-weight: 400;
     font-size: 30px;
   }
-  
+
   .reviewimage {
-    position: absolute;
-    right: 0;
-    clip-path: ellipse(76% 50% at 0% 50%);
+    clip-path: ellipse(98% 50% at 98% 50%);
+    shape-outside: ellipse(98% 50% at 98% 50%);
+    float: right;
   }
-  
+
+  .reviewimage img{
+    width: 1000px;
+    height: auto;
+    float: right;
+    right: 0;
+  }
+
   /* End Reviews Section */
-  
+
   /* Begin Footer Section */
-  
+
   .footer {
     background-color: #B60124;
     padding: 10px;
   }
-  
+
   .sectionbox_footer {
     width: 80%;
     justify-content: space-between;
@@ -327,21 +347,21 @@
     font-weight: 400;
     font-size: 30px;
   }
-  
+
   /* End Footer Section */
-  
+
   /* ==========================================================================
      Helper classes
      ========================================================================== */
-  
+
   /*
    * Hide visually and from screen readers
    */
-  
+
   .hidden {
     display: none !important;
   }
-  
+
   /*
   * Hide only visually, but have it available for screen readers:
   * https://snook.ca/archives/html_and_css/hiding-content-for-accessibility
@@ -350,7 +370,7 @@
   *    causes content to wrap 1 word per line:
   *    https://medium.com/@jessebeach/beware-smushed-off-screen-accessible-text-5952a4c2cbfe
   */
-  
+
   .sr-only {
     border: 0;
     clip: rect(0, 0, 0, 0);
@@ -363,13 +383,13 @@
     width: 1px;
     /* 1 */
   }
-  
+
   /*
   * Extends the .sr-only class to allow the element
   * to be focusable when navigated to via the keyboard:
   * https://www.drupal.org/node/897638
   */
-  
+
   .sr-only.focusable:active,
   .sr-only.focusable:focus {
     clip: auto;
@@ -380,15 +400,15 @@
     white-space: inherit;
     width: auto;
   }
-  
+
   /*
   * Hide visually and from screen readers, but maintain layout
   */
-  
+
   .invisible {
     visibility: hidden;
   }
-  
+
   /*
   * Clearfix: contain floats
   *
@@ -400,7 +420,7 @@
   * 2. The use of `table` rather than `block` is only necessary if using
   *    `:before` to contain the top-margins of child elements.
   */
-  
+
   .clearfix:before,
   .clearfix:after {
     content: " ";
@@ -408,34 +428,59 @@
     display: table;
     /* 2 */
   }
-  
+
   .clearfix:after {
     clear: both;
   }
-  
+
   /* ==========================================================================
      EXAMPLE Media Queries for Responsive Design.
      These examples override the primary ('mobile first') styles.
      Modify as content requires.
      ========================================================================== */
-  
-  @media only screen and (min-width: 35em) {
-    /* Style adjustments for viewports that meet the condition */
-  }
-  
+     /* On screens that are 1000px wide or less */
+     @media screen and (max-width: 1000px) {
+
+     }
+
+     /* On screens that are 900px wide or less */
+     @media screen and (max-width: 900px) {
+
+     }
+
+     /* On screens that are 768px wide or less */
+     @media screen and (max-width: 768px) {
+
+     }
+
+     /* On screens that are 550px wide or less */
+     @media screen and (max-width: 550px) {
+
+     }
+
+     /* On screens that are 450px wide or less */
+     @media screen and (max-width: 450px) {
+
+     }
+
+     /* On screens that are 300px wide or less */
+     @media screen and (max-width: 300px) {
+
+     }
+
   @media print,
   (-webkit-min-device-pixel-ratio: 1.25),
   (min-resolution: 1.25dppx),
   (min-resolution: 120dpi) {
     /* Style adjustments for high resolution devices */
   }
-  
+
   /* ==========================================================================
      Print styles.
      Inlined to avoid the additional HTTP request:
      https://www.phpied.com/delay-loading-your-print-css/
      ========================================================================== */
-  
+
   @media print {
     *,
     *:before,
