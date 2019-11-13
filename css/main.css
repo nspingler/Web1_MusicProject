@@ -178,14 +178,6 @@
     margin: 5% 5% 5% 0;
   }
 
-    float: left;
-  }
-
-  .bioimage img{
-    width: 1000px;
-    height: auto;
-    float: left;
-  }
 
   /* End Bio Section */
 
@@ -204,7 +196,6 @@
     color: #fff;
     font-family: 'Source sans pro', sans-serif;
   }
-
 
 /* fixed the margin that was creating wierd spacing */
 
@@ -285,7 +276,6 @@
 
 
 
-
 /* Made some updates to the image to stick the left */
 
     .bioimage img{
@@ -294,12 +284,6 @@
   float: right;
   position: relative;
   left: -50px;
-
-    .bioimage img{
-      width: 1000px;
-      height: auto;
-      float: right;
-
     }
 
   /* End Tour Section */
