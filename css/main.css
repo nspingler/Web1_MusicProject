@@ -16,6 +16,7 @@
     color: #222;
     font-size: 1em;
     line-height: 1.4;
+    overflow-x: hidden;
   }
 
   /*
@@ -479,7 +480,7 @@
        float: right;
        width: 95%;
      }
-     
+
      }
 
      /* On screens that are 550px wide or less */
@@ -490,12 +491,37 @@
      /* On screens that are 450px wide or less */
    @media screen and (max-width: 450px) {
 
-     }
-
+    .logo {
+      width: 90%;
+      height: auto;
+    }
+    .navbar a {
+      font-size: 80px;
+    }
+    .bioimage img {
+      width: 300px;
+    }
+    .para {
+      font-size: 20px;
+    }
+    #tourhead {
+      font-size: 45px;
+    }
+    .sectionbox_tour {
+      font-size: 20px;
+    }
+    #reviewhead {
+      font-size: 45px;
+    }
+    .sectionbox {
+      font-size: 20px;
+    }
+    .sectionbox_footer {
+      font-size: 20px;
+    }
      /* On screens that are 300px wide or less */
    @media screen and (max-width: 300px) {
 
-     }
 
   @media print,
   (-webkit-min-device-pixel-ratio: 1.25),
